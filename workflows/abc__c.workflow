@@ -11,6 +11,17 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Email_Template_for_testing</template>
     </alerts>
+	<alerts>
+        <fullName>Email_alert_for_welcoming_user1</fullName>
+        <description>Email alert for welcoming user1</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ram-reddy.bonala@hp.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Template_for_testing</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Oppty_Change</fullName>
         <field>testfield__c</field>
