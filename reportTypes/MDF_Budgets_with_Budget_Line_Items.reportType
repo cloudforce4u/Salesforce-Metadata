@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Budget__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Report on MDF Budgets with Budget Line Items</description>
+    <join>
+        <join>
+            <join>
+                <outerJoin>false</outerJoin>
+                <relationship>FAPJunction__r</relationship>
+            </join>
+            <outerJoin>false</outerJoin>
+            <relationship>BLFAssociation__r</relationship>
+        </join>
+        <outerJoin>false</outerJoin>
+        <relationship>Budget_Product_Association__r</relationship>
+    </join>
+    <label>MDF Budgets with Budget Line Items</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Execution End Date</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Execution_End_Date__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Fiscal Year</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Fiscal_Year__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Fund Period Half</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Fund_Period_Half__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Market Development Period ID</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Id</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Period</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Period__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Planning End Date</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Planning_End_Date__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Planning Start Date</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Planning_Start_Date__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Execution Start Date</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Execution_Start_Date__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MDP: Market Development Period Name</displayNameOverride>
+            <field>MarketDevelopmentPeriod__c.Name</field>
+            <table>Budget__c</table>
+        </columns>
+        <masterLabel>Market Development Period</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Alliance__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Alliance_ID__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approver__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Budget_Name__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BusinessGroup__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Business_Relationship__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GlobalBusinessUnit__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Planned__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Committed_to_Activities_Converted__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cost_Center__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Country__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Location__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Country_Name__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Type__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CurrencyIsoCode</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Budget_Description__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Exchange_rate__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Execution_End_Date__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Execution_Start_Date__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GL_Acct__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GL_ic_sub_a_c__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GL_Local_sub_a_c__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Group_of_Countries_AMS__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Group_of_Countries_APJ__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Group_of_Countries_EMEA__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Hp_Org__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Internal_Comments__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastActivityDate</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LH_Business_Area__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LH_Cost_Center__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MarketDevelopmentPeriod__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MDF_Planning_Region__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PL__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Profit_Center__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RecordType</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Region__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Budget_Status__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ApprovedRequest__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Budget_Converted__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalBudgetAllocated__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Budget_Allocated_Converted__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AvailableBudget__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Budget_Remaining_Converted__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Claimed__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Claimed_Converted__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Budget_Paid__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Paid_Converted__c</field>
+            <table>Budget__c</table>
+        </columns>
+        <masterLabel>Budgets</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AllocatedProductBudget__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BudgetBG__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BusinessArea__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cost_Center__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CurrencyIsoCode</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GL_Acct__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GL_ic_sub_a_c__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GL_Local_sub_a_c__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>HP_Org__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastActivityDate</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LH_Cost_Center__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PercentageAllocation__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductBG__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductFamily__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductFulfillment__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductLine__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductName__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Profit_Center__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalBudget__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalBudgetAllocated__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Sub Product Line</displayNameOverride>
+            <field>Product__c.Sub_Product_Line__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Product Name</displayNameOverride>
+            <field>Product__c.Name</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Product PIL ID</displayNameOverride>
+            <field>Product__c.Product_PIL_ID__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Product Line</displayNameOverride>
+            <field>Product__c.Product_Line__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Product level</displayNameOverride>
+            <field>Product__c.Product_level__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Product ID</displayNameOverride>
+            <field>Product__c.Id</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Product Family</displayNameOverride>
+            <field>Product__c.Family</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Product Description</displayNameOverride>
+            <field>Product__c.Description</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: PL name</displayNameOverride>
+            <field>Product__c.PL_name__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: PL Plus Sub PL</displayNameOverride>
+            <field>Product__c.PL_Plus_Sub_PL__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Business_Group_CD</displayNameOverride>
+            <field>Product__c.Business_Group_CD__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Business_Group_NM</displayNameOverride>
+            <field>Product__c.Business_Group_NM__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Global_Business_Unit_CD</displayNameOverride>
+            <field>Product__c.Global_Business_Unit_CD__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Product: Global_Business_Unit_NM</displayNameOverride>
+            <field>Product__c.Global_Business_Unit_NM__c</field>
+            <table>Budget__c.Budget_Product_Association__r</table>
+        </columns>
+        <masterLabel>Budget Line Items</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Allocated_Fund_Amount__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AllocatedProductBudget__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BusinessArea__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CurrencyIsoCode</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Fund__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundBusinessGroup__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundExpirationDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundGBU__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundName__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Fundsselectedforproduct__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundStatus__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundType__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundUsed__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastActivityDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PercentageAllocation__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductBG__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductFamily__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductFulfillment__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductLine__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductName__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalBudget__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalFundClaimed__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalFundsPaid__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalFundsPlanned__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UnplannedFunds__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <masterLabel>Fund Line Items</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Account Region</displayNameOverride>
+            <field>Fund__c.AccountRegion__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Alliance</displayNameOverride>
+            <field>Fund__c.Alliance__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Allocated Fund Amount</displayNameOverride>
+            <field>Fund__c.AllocatedFundAmount__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Allocated Fund Amount (Converted)</displayNameOverride>
+            <field>Fund__c.Allocated_Fund_Amount_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Approver</displayNameOverride>
+            <field>Fund__c.Approver__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Budget</displayNameOverride>
+            <field>Fund__c.Budget__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Business Group</displayNameOverride>
+            <field>Fund__c.BusinessGroup__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Commited to Activities</displayNameOverride>
+            <field>Fund__c.Total_Funds_Planned__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Committed to Activities (Converted)</displayNameOverride>
+            <field>Fund__c.Committed_to_Activities_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Cost Center</displayNameOverride>
+            <field>Fund__c.CostCenter__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Country</displayNameOverride>
+            <field>Fund__c.Fund_Country__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Created By</displayNameOverride>
+            <field>Fund__c.CreatedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Created Date</displayNameOverride>
+            <field>Fund__c.CreatedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Currency</displayNameOverride>
+            <field>Fund__c.CurrencyIsoCode</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Description</displayNameOverride>
+            <field>Fund__c.FundDescription__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Exchange Rate</displayNameOverride>
+            <field>Fund__c.Exchange_Rate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Execution End Date</displayNameOverride>
+            <field>Fund__c.Expiration_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Execution Start Date</displayNameOverride>
+            <field>Fund__c.Execution_Start_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Execution Start Date</displayNameOverride>
+            <field>Fund__c.FundStartDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Fund Classification</displayNameOverride>
+            <field>Fund__c.Global_Business_Unit__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: FundEnd Date</displayNameOverride>
+            <field>Fund__c.FundEndDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Fund ID</displayNameOverride>
+            <field>Fund__c.Id</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Funding Period</displayNameOverride>
+            <field>Fund__c.Funding_Period__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Fund Name</displayNameOverride>
+            <field>Fund__c.FundName__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Fund Name</displayNameOverride>
+            <field>Fund__c.Fund_Name__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Fund Number</displayNameOverride>
+            <field>Fund__c.Name</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Fund Sequence</displayNameOverride>
+            <field>Fund__c.Fund_Sequence__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Fund Used</displayNameOverride>
+            <field>Fund__c.Fund_Used__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: IB Fund Classification</displayNameOverride>
+            <field>Fund__c.IB_Fund_Classification__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Internal Comments</displayNameOverride>
+            <field>Fund__c.Internal_Comments__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: IsMSA</displayNameOverride>
+            <field>Fund__c.IsMSA__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Is User Account Fund</displayNameOverride>
+            <field>Fund__c.Is_User_Account_Fund__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Last Activity Date</displayNameOverride>
+            <field>Fund__c.LastActivityDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Last Modified By</displayNameOverride>
+            <field>Fund__c.LastModifiedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Last Modified Date</displayNameOverride>
+            <field>Fund__c.LastModifiedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Level 1 Approved</displayNameOverride>
+            <field>Fund__c.Level_1_Approved__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: MDF Planning Region</displayNameOverride>
+            <field>Fund__c.MDF_Planning_Region__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Owner</displayNameOverride>
+            <field>Fund__c.Owner</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Region</displayNameOverride>
+            <field>Fund__c.Region__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Status</displayNameOverride>
+            <field>Fund__c.Status__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Total Claimed</displayNameOverride>
+            <field>Fund__c.Total_Fund_Claimed__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Total Claimed (Converted)</displayNameOverride>
+            <field>Fund__c.Total_Claimed_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Total Fund Remaining</displayNameOverride>
+            <field>Fund__c.UnusedFunds__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Total Funds Remaining</displayNameOverride>
+            <field>Fund__c.Total_Funds_Remaining__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Total Funds Remaining (Converted)</displayNameOverride>
+            <field>Fund__c.Total_Funds_Remaining_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Total Paid</displayNameOverride>
+            <field>Fund__c.TotalFundsPaid__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Total Paid (Converted)</displayNameOverride>
+            <field>Fund__c.Total_Paid_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Type</displayNameOverride>
+            <field>Fund__c.Type__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Account</displayNameOverride>
+            <field>Fund__c.Account__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r</table>
+        </columns>
+        <masterLabel>Funds</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Activity Start Date</displayNameOverride>
+            <field>FundActivityJunction__c.ActivityStartDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Fund Activity Junction: Activity Status</displayNameOverride>
+            <field>FundActivityJunction__c.ActivityStatus__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Amount</displayNameOverride>
+            <field>FundActivityJunction__c.Amount__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Budget Alliance</displayNameOverride>
+            <field>FundActivityJunction__c.Budget_Alliance__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Budget Type</displayNameOverride>
+            <field>FundActivityJunction__c.Budget_Type__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Comments</displayNameOverride>
+            <field>FundActivityJunction__c.Comments__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Created By</displayNameOverride>
+            <field>FundActivityJunction__c.CreatedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Created Date</displayNameOverride>
+            <field>FundActivityJunction__c.CreatedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Currency</displayNameOverride>
+            <field>FundActivityJunction__c.CurrencyIsoCode</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Expiration Date</displayNameOverride>
+            <field>FundActivityJunction__c.Expiration_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Fund Activity Approved By</displayNameOverride>
+            <field>FundActivityJunction__c.FundActivityApprovedBy__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Fund Activity Junction ID</displayNameOverride>
+            <field>FundActivityJunction__c.Id</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ:Fund Activity Junction Name</displayNameOverride>
+            <field>FundActivityJunction__c.Name</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Fund Allocated to Activity</displayNameOverride>
+            <field>FundActivityJunction__c.FundAllocatedtoActivity__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Fund Request</displayNameOverride>
+            <field>FundActivityJunction__c.FundRequest__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Last Activity Date</displayNameOverride>
+            <field>FundActivityJunction__c.LastActivityDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Last Modified By</displayNameOverride>
+            <field>FundActivityJunction__c.LastModifiedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Last Modified Date</displayNameOverride>
+            <field>FundActivityJunction__c.LastModifiedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Region</displayNameOverride>
+            <field>FundActivityJunction__c.Region__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Request Activity</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Type</displayNameOverride>
+            <field>FundActivityJunction__c.Type__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Status</displayNameOverride>
+            <field>FundActivityJunction__c.Status__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Activity Claim split up</displayNameOverride>
+            <field>FundActivityJunction__c.Activity_Claim_split_up__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Activity Expiration Date</displayNameOverride>
+            <field>FundActivityJunction__c.ActivityExpirationDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FAJ: Activity Paid Claims Splitup</displayNameOverride>
+            <field>FundActivityJunction__c.Activity_Paid_Claims_Splitup__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <masterLabel>Fund Activity Junction</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ActivityFundsselectedforProduct__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ActivityId__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Allocated_Product_Budget__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BudgetExpiryDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BusinessArea__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CurrencyIsoCode</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FundActivityJunction__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastActivityDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PercentageAllocation__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product_BG__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product_Family__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product_Fulfillment__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product_Line__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Product_Name__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <masterLabel>Activity Line Items</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Approval Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Approval_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Goal 1 Type</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Goal_1_Type__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Goal 2</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Goal_2__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Goal 2 Type</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Goal_2_Type__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity ID</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_ID__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Metric 1</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Metric_1__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Metric 2</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Metric_2__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Name</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Name</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Sequence</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Sequence__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Start Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Start_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Submitted Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.ActivitySubmittedDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Type</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Type__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approval Comments</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approval_Comments__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approval Fallout</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approval_Fallout__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approval Flow Type</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.ApprovalFlowType__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 1</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver1__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 10</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver10__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 11</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver11__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 12</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver12__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 2</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver2__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 3</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver3__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 4</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver4__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 5</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver5__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 6</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver6__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 7</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver7__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 8</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver8__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Approver 9</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Approver9__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Associated Claim</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Associated_Claim__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Audit Type</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Audit_Type__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: BudgetExpiryDate</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.BudgetExpiryDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Business Group</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Business_Group__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Cancellation Reason</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Cancellation_Reason__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Claim Expiration Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Claim_Expiration_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Claim Here</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.ClaimHere__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Claim Status</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.ClaimStatus__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: ClaimSubmissionDate</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.ClaimSubmissionDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Combination Match</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.CombinationMatch__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Country</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Country__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Created By</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.CreatedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Created Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.CreatedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Currency</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.CurrencyIsoCode</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Current Approval Level</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.CurrentApprovalLevel__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Dynamic URL</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Dynamic_URL__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Exchange Rate</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Exchange_Rate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Exp Date is Blank</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.ExpDateisBlank__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Fund Amount</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Fund_Amount__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Fund Amount (Converted)</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Fund_Amount_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Fund Expiration Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Fund_Expiration_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: GBU</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.GBU__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: GBU Grouping</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.GBU_Grouping__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: GPP Link</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.GPP_Link__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: HasIBFund</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.HasIBFund__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: HP Hosted Event</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.HP_Hosted_Event__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Is Alliance</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.IsAlliance__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Last Activity Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.LastActivityDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Last Modified By</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.LastModifiedBy</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Last Modified Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.LastModifiedDate</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Level Completed</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.LevelCompleted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Matching Approval Matrix</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Matching_Approval_Matrix__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: MDF Activity ID</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Id</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: MSA Account</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.MSA_Account__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: MSA Contact</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.MSAContact__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Owner</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Owner</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Partner Account</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Partner_Account__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Partner Co-Investment</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Partner_Co_Investment__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Partner Co-Investment (Converted)</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Partner_Co_Investment_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Partner Type</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.PartnerType__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Planning End Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.PlanningEndDate__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Planning Start Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Planning_Start_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Primary Location</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Primary_Location__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Primary Location ID</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Primary_Location_ID__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Primary Partner User</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Primary_Partner__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Primary PBM</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Primary_PBM__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Primary PBM Email</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Primary_PBM_Email__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Product Offering</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Product_Offering__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 1</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel1__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 10</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel10__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 11</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel11__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 12</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel12__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 2</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel2__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 3</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel3__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 4</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel4__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 5</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel5__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 6</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel6__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 7</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel7__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 8</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel8__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Queue Level 9</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.QueueLevel9__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Record Type</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.RecordType</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Region</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.AccountRegion__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Rejection Reason</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Rejection_Reason__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Requested HP Investment</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Amount__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Requested HP Investment</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.RequestedHPInvestment__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Requested HP Investment (Converted)</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Requested_HP_Investment_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Route To Market</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.RouteToMarket__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: SO2</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.SO2__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Status</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Status__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Strategic Initiative</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Strategic_Initiative__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Threshold ($)</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Threshold__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Total Activity Cost</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Total_Activity_Cost__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Total Activity Cost (Converted)</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Total_Activity_Cost_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Total Investment</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Total_Investment__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Goal 1</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Goal_1__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity End Date</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_End_Date__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Activity Description</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Activity_Descrpition__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity: Total Investment (Converted)</displayNameOverride>
+            <field>FundActivityJunction__c.RequestActivity__c.Total_Investment_Converted__c</field>
+            <table>Budget__c.Budget_Product_Association__r.BLFAssociation__r.FAPJunction__r</table>
+        </columns>
+        <masterLabel>Activities</masterLabel>
+    </sections>
+</ReportType>
