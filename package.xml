@@ -28,5 +28,16 @@
         <members>*</members>
         <name>SharingReason</name>
     </types>
+<<<<<<< HEAD
+=======
+	    <types>
+        <members>*</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Workflow</name>
+    </types>
+>>>>>>> de106af41131c4123ee745d745a633375919a0a9
     <version>37.0</version>
 </Package>
